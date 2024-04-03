@@ -1,0 +1,35 @@
+html {
+    font-size: 10px;/*HTML默认字体大小为10px，可以被覆盖*/
+    font-family: 'Noto Sans SC', sans-serif;
+    background-color: #005aae;
+}
+
+body {
+    width: 600px;
+    margin: 0 auto;/*居中*/
+    background-color: #FF9500;
+    padding: 0 20px 20px 20px;/*上右下左*/
+    border: 5px solid black;/*边框*/
+}
+
+h1 {
+    font-size: 48px;/*字体大小*/
+    text-align: center;/*文本局中*/
+    margin: 0;/*外边距*/
+    padding: 20px 0;
+    color: #00539F;
+    text-shadow: 3px 3px 1px black;/*文字阴影，参数含义：水平偏移、垂直偏移、模糊距离和阴影颜色*/
+}
+
+p,li {
+    font-size: 16px;
+    line-height: 1.5;/*行高*/
+    color: #00539F;
+    letter-spacing: 1px;/*字间距*/
+}
+
+img {
+    display: block;/*块级元素*/
+    margin: 0 auto;
+    border: 5px solid #00539F;
+}
