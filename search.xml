@@ -1617,4 +1617,17 @@ Elvis 运算符之后的表达式。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
+  <entry>
+    <title>FTP GUI Videos</title>
+    <url>/2024/10/20/FTP-GUI-Videos/</url>
+    <content><![CDATA[<p>客户端GUI较为清晰版的视频。 <span id="more"></span>
+<video width="320" height="240" controls>
+<source src="/images/FTP/2.mp4" type="video/mp4"> Your browser does not
+support the video tag. </video></p>
+<p>由于需要测试不阻塞主界面，因此我们把每次上传和下载的读取都仅仅读取 1
+个，才有机会测试出不阻塞。 <video width="320" height="240" controls>
+<source src="/images/FTP/1.mp4" type="video/mp4"> Your browser does not
+support the video tag. </video></p>
+]]></content>
+  </entry>
 </search>
