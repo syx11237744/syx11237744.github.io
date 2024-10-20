@@ -840,8 +840,8 @@ href="https://blog.csdn.net/qq_42257666/article/details/129651505">https://blog.
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git branch</span><br><span class="line">git branch -r(remote)</span><br></pre></td></tr></table></figure>
 <h3 id="checkout">Checkout</h3>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git checkout branch_name</span><br><span class="line">git checkout -b local_branch_name origin/remote_branch_name</span><br></pre></td></tr></table></figure>
-<h1 id="ssh">ssh</h1>
-<h2 id="常见命令">常见命令</h2>
+<h3 id="lfs">LFS</h3>
+<p>处理文件过大问题 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git lfs install</span><br><span class="line">git lfs track &quot;file&quot;</span><br></pre></td></tr></table></figure> # ssh ## 常见命令</p>
 <p>这个命令通过 <code>ssh</code>
 进行远程连接，并设置了一个反向代理通道。详细解释如下：</p>
 <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">ssh -R 7890:localhost:7890 username@ip -p port -A -i ~/.ssh/id_rsa</span><br></pre></td></tr></table></figure>
