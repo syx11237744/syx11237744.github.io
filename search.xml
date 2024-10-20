@@ -1604,4 +1604,17 @@ Elvis 运算符之后的表达式。</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">The number of characters in your favorite singer&#x27;s name is 5.</span><br></pre></td></tr></table></figure>
 ]]></content>
   </entry>
+  <entry>
+    <title>Hexo</title>
+    <url>/2024/10/20/Hexo/</url>
+    <content><![CDATA[<p>过一阵发现想要新建一个帖子的时候，已经把命令忘记了，所以记录一下。
+<span id="more"></span></p>
+<h2 id="新建一个帖子">新建一个帖子</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo new &quot;Hexo&quot;</span><br></pre></td></tr></table></figure>
+<h2 id="生成静态文件">生成静态文件</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
+<h2 id="部署网站">部署网站</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
 </search>
