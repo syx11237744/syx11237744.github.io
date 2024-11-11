@@ -1630,4 +1630,17 @@ support the video tag. </video></p>
 support the video tag. </video></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>GitHub PAT</title>
+    <url>/2024/11/11/GitHub-PAT/</url>
+    <content><![CDATA[<p>生成github PAT的流程 <span id="more"></span> 1. Settings → Developer Settings →
+Personal Access Token → Tokens (classic) → Generate New Token 2.
+加入Note，勾选repo，admin:repo_hook等权限 3. For Linux, you need to
+configure the local GIT client with a username and email address,
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git config --global user.name &quot;your_github_username&quot;</span><br><span class="line">$ git config --global user.email &quot;your_github_email&quot;</span><br></pre></td></tr></table></figure> 4. Once GIT is configured, we can begin using it to access
+GitHub. Example: <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY</span><br><span class="line"> &gt; Cloning into `YOUR-REPOSITORY`...</span><br><span class="line"> Username: &lt;type your username&gt;</span><br><span class="line"> Password: &lt;type your password or personal access token (GitHub)</span><br></pre></td></tr></table></figure> 5. Now cache the given record in your
+computer to remembers the token: <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">git config --global credential.helper cache</span><br></pre></td></tr></table></figure> 6. If needed, anytime you
+can delete the cache record by: <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">$ git config --global --unset credential.helper</span><br><span class="line"> $ git config --system --unset credential.helper</span><br></pre></td></tr></table></figure></p>
+]]></content>
+  </entry>
 </search>

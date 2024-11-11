@@ -20,19 +20,19 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="过一阵发现想要新建一个帖子的时候，已经把命令忘记了，所以记录一下。">
+  <meta name="description" content="生成github PAT的流程">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/2024/10/20/Hexo/index.html">
+<meta property="og:title" content="GitHub PAT">
+<meta property="og:url" content="http://example.com/2024/11/11/GitHub-PAT/index.html">
 <meta property="og:site_name" content="Xuu&#39;s Blog">
-<meta property="og:description" content="过一阵发现想要新建一个帖子的时候，已经把命令忘记了，所以记录一下。">
+<meta property="og:description" content="生成github PAT的流程">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2024-10-20T07:17:59.000Z">
-<meta property="article:modified_time" content="2024-10-20T07:21:24.002Z">
+<meta property="article:published_time" content="2024-11-11T04:05:02.000Z">
+<meta property="article:modified_time" content="2024-11-11T04:09:28.340Z">
 <meta property="article:author" content="Xuu">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2024/10/20/Hexo/">
+<link rel="canonical" href="http://example.com/2024/11/11/GitHub-PAT/">
 
 
 <script id="page-configurations">
@@ -45,7 +45,7 @@
   };
 </script>
 
-  <title>Hexo | Xuu's Blog</title>
+  <title>GitHub PAT | Xuu's Blog</title>
   
 
 
@@ -150,7 +150,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2024/10/20/Hexo/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2024/11/11/GitHub-PAT/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -163,7 +163,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hexo
+          GitHub PAT
         </h1>
 
         <div class="post-meta">
@@ -174,7 +174,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2024-10-20 15:17:59 / Modified: 15:21:24" itemprop="dateCreated datePublished" datetime="2024-10-20T15:17:59+08:00">2024-10-20</time>
+              <time title="Created: 2024-11-11 12:05:02 / Modified: 12:09:28" itemprop="dateCreated datePublished" datetime="2024-11-11T12:05:02+08:00">2024-11-11</time>
             </span>
 
           
@@ -188,14 +188,14 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>过一阵发现想要新建一个帖子的时候，已经把命令忘记了，所以记录一下。
-<span id="more"></span></p>
-<h2 id="新建一个帖子">新建一个帖子</h2>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;Hexo&quot;</span><br></pre></td></tr></table></figure>
-<h2 id="生成静态文件">生成静态文件</h2>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
-<h2 id="部署网站">部署网站</h2>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+        <p>生成github PAT的流程 <span id="more"></span> 1. Settings → Developer Settings →
+Personal Access Token → Tokens (classic) → Generate New Token 2.
+加入Note，勾选repo，admin:repo_hook等权限 3. For Linux, you need to
+configure the local GIT client with a username and email address,
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global user.name &quot;your_github_username&quot;</span><br><span class="line">$ git config --global user.email &quot;your_github_email&quot;</span><br></pre></td></tr></table></figure> 4. Once GIT is configured, we can begin using it to access
+GitHub. Example: <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY</span><br><span class="line"> &gt; Cloning into `YOUR-REPOSITORY`...</span><br><span class="line"> Username: &lt;type your username&gt;</span><br><span class="line"> Password: &lt;type your password or personal access token (GitHub)</span><br></pre></td></tr></table></figure> 5. Now cache the given record in your
+computer to remembers the token: <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global credential.helper cache</span><br></pre></td></tr></table></figure> 6. If needed, anytime you
+can delete the cache record by: <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ git config --global --unset credential.helper</span><br><span class="line"> $ git config --system --unset credential.helper</span><br></pre></td></tr></table></figure></p>
 
     </div>
 
@@ -211,13 +211,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2024/10/03/sftp/" rel="prev" title="sftp">
-      <i class="fa fa-chevron-left"></i> sftp
+    <a href="/2024/10/20/FTP-GUI-Videos/" rel="prev" title="FTP GUI Videos">
+      <i class="fa fa-chevron-left"></i> FTP GUI Videos
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2024/10/20/FTP-GUI-Videos/" rel="next" title="FTP GUI Videos">
-      FTP GUI Videos <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -276,7 +273,6 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%96%B0%E5%BB%BA%E4%B8%80%E4%B8%AA%E5%B8%96%E5%AD%90"><span class="nav-number">1.</span> <span class="nav-text">新建一个帖子</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6"><span class="nav-number">2.</span> <span class="nav-text">生成静态文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E9%83%A8%E7%BD%B2%E7%BD%91%E7%AB%99"><span class="nav-number">3.</span> <span class="nav-text">部署网站</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
