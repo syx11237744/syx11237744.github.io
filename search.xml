@@ -830,7 +830,7 @@ href="https://blog.csdn.net/qq_42257666/article/details/129651505">https://blog.
     <content><![CDATA[<p>记录了常见的一些命令，包括docker,git,ssh,proxy,scp等。</p>
 <h1 id="docker">docker</h1>
 <h2 id="基础命令">基础命令</h2>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker start &lt;container_id_or_name&gt;</span><br><span class="line"></span><br><span class="line">docker <span class="built_in">exec</span> -it &lt;container_id_or_name&gt; /bin/bash</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">docker run --gpus all --name LM -it --security-opt seccomp=unconfined -v /home/sunyuanxu/code:/workspace/code -v /raid/sunyuanxu:/workspace/raid nvcr.io/nvidia/pytorch:24.05-py3</span><br><span class="line"></span><br><span class="line">docker start &lt;container_id_or_name&gt;</span><br><span class="line"></span><br><span class="line">docker <span class="built_in">exec</span> -it &lt;container_id_or_name&gt; /bin/bash</span><br></pre></td></tr></table></figure>
 <span id="more"></span>
 <h1 id="git">git</h1>
 <h2 id="基础命令-1">基础命令</h2>
@@ -931,7 +931,7 @@ case: <figure class="highlight bash"><table><tr><td class="code"><pre><span clas
   <entry>
     <title>Kotlin 介绍</title>
     <url>/2024/07/18/kotlin/</url>
-    <content><![CDATA[<p>此文章是暑陪的时候写的，但是实际上就是参考官网的教程copy了一份。
+    <content><![CDATA[<p>此文章是暑培的时候写的，但是实际上就是参考官网的教程copy了一份。
 <span id="more"></span> ## Kotlin 介绍</p>
 <p>Kotlin 是一种现代且成熟的编程语言，由 JetBrains 公司于 2011
 年设计和开发，并在 2016 年正式发布。在 2019 年的 Google I/O
